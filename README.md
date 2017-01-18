@@ -1,9 +1,11 @@
 SpreeProductZoom + Hover Zoom
 =======================
 
-A Spree extension that adds lightbox **and hover** zoom functionality for product images.
+A Spree extension that adds lightbox **and zoom-on-hover** functionality for product images.
 The lightbox is powered by [fancyBox](http://fancyapps.com/fancybox/).
 Zoom on hover is available thanks to the amazing work done by [Drift](http://github.com/imgix/drift/).
+Forked from [robert-hromej/spree_product_zoom](https://github.com/robert-hromej/spree_product_zoom).
+
 
 Installation
 =======
