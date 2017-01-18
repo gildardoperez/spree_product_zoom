@@ -6,6 +6,7 @@ The lightbox is powered by [fancyBox](http://fancyapps.com/fancybox/).
 Zoom on hover is available thanks to the amazing work done by [Drift](http://github.com/imgix/drift/).
 Forked from [robert-hromej/spree_product_zoom](https://github.com/robert-hromej/spree_product_zoom).
 
+[![N|Solid](https://github.com/vinzloh/spree_product_zoom/raw/master/spree-zoom-on-hover.gif)]()
 
 Installation
 =======
