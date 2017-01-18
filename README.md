@@ -1,17 +1,17 @@
-SpreeProductZoom
-===================
+SpreeProductZoom + Hover Zoom
+=======================
 
-A Spree extension that adds lightbox zoom functionality for product images.
+A Spree extension that adds lightbox **and hover** zoom functionality for product images.
 The lightbox is powered by [fancyBox](http://fancyapps.com/fancybox/).
+Zoom on hover is available thanks to the amazing work done by [Drift](http://github.com/imgix/drift/).
 
-
-Installation	
+Installation
 =======
 
 Add this extension to your Gemfile:
 
 ```ruby
-gem "spree_product_zoom", :git => "git://github.com/spree/spree_product_zoom.git"
+gem "spree_product_zoom", :git => "git://github.com/vinzloh/spree_product_zoom.git"
 ```
 
 Then run:
@@ -41,9 +41,23 @@ To change the default style from `:original` create a file config/initializers/s
 Spree::ProductZoom::Config[:default_image_style] = :your_image_style
 ```
 
+Customization
+=============
+
+To change the zoom factor, add the line below to your .js file:
+```
+SpreeProductHoverZoom.zoomFactor = 1
+```
+
+To change the hover pane height, override the css:
+```
+.product-hover-zoom {
+  height: 500px;
+}
+```
+
 License
 =======
 
 This project has been released under the New BSD License, Copyright (c) 2012 John Dyer.
 Please keep in mind that *fancyBox* has to be licensed in particular if you want to use this gem in a commercial way. See for more details: http://www.fancyapps.com/fancybox/#license
-

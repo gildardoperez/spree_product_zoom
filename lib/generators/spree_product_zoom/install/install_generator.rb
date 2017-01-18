@@ -4,6 +4,7 @@ module SpreeProductZoom
 
       def add_javascripts
         append_file 'vendor/assets/javascripts/spree/frontend/all.js', "//= require fancybox\n"
+        append_file 'vendor/assets/javascripts/spree/frontend/all.js', "//= require drift.min\n"
         append_file 'vendor/assets/javascripts/spree/frontend/all.js', "//= require spree/frontend/spree_product_zoom\n"
       end
 

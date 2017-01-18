@@ -67,6 +67,10 @@ update_variant_price = (variant) ->
   else
     ($ '#add-to-cart-button').prop('disabled', true).html('<%= Spree.t(:out_of_stock) %>')
 
+window.SpreeProductHoverZoom = {
+  zoomFactor: 4,
+}
+
 $ ->
   ($ 'img.click-to-zoom').attr 'src', "<%= asset_path('zoom.gif') %>"
   add_image_handlers()
@@ -87,3 +91,5 @@ $ ->
       update_variant_price ($ this).find('option:selected')
 
   ($ '.fancybox').fancybox()
+
+  new Drift($('img.zoom-click')[0], paneContainer: $('[data-hook=product_hover_zoom]')[0], zoomFactor: SpreeProductHoverZoom.zoomFactor)

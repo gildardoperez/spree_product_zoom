@@ -1,4 +1,4 @@
-<% if defined?(image) && image %> 
+<% if defined?(image) && image %>
   <%= link_to image_tag(image.attachment.url(:product), :itemprop => "image"), image.attachment.url(:original), :class => 'fancybox zoom-image' %>
   <br />
   <%= link_to image.attachment.url(:original), :class => 'fancybox zoom-image' %>
@@ -11,7 +11,7 @@
     <% else %>
       <% @p = @product %>
     <% end %>
-    <%= link_to product_image(@product, :itemprop => "image", :class => 'zoom-click'), @p.images.first.attachment.url(Spree::ProductZoom::Config.default_image_style), :class => 'zoom-image large-image zoom-click', :rel => 'gallery' %>
+    <%= link_to product_image(@product, :itemprop => "image", :class => 'zoom-click', data: { zoom: @p.images.first.attachment.url(Spree::ProductZoom::Config.default_image_style) }), @p.images.first.attachment.url(Spree::ProductZoom::Config.default_image_style), :class => 'zoom-image large-image zoom-click', :rel => 'gallery' %>
     <br/>
     <!-- PROBLEM: still in div#main-image, will be overwritten by javascript -->
     <%= link_to image_tag('zoom.gif', alt: 'zoom image', class: 'click-to-zoom'), @p.images.first.attachment.url(Spree::ProductZoom::Config.default_image_style), :class => 'zoom-image click-to-zoom', :rel => 'gallery' %>

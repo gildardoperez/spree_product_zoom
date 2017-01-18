@@ -3,19 +3,19 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_product_zoom'
   s.version     = '2.2'
-  s.summary     = 'Add product image zoom functionality via a lightbox'
+  s.summary     = 'A Spree extension that adds lightbox and hover zoom functionality for product images.'
   s.required_ruby_version = '>= 1.8.7'
 
-  s.author    = 'John Dyer'
-  s.email     = 'jdyer@spreecommerce.com'
-  s.homepage  = 'http://www.spreecommerce.com'
+  s.author    = 'Vinz Loh'
+  s.email     = 'vincent.ml@gmail.com'
+  s.homepage  = 'http://cloudcoder.com.my'
 
   s.files       = `git ls-files`.split("\n")
   s.require_path = 'lib'
   s.requirements << 'none'
 
-  s.add_dependency 'spree_core', '~> 3.2.0.rc2'
-  s.add_dependency 'spree_frontend', '~> 3.2.0.rc2'
+  s.add_dependency 'spree_core', '~> 3.1.0'
+  s.add_dependency 'spree_frontend', '~> 3.1.0'
 
   s.add_development_dependency 'capybara', '~> 2.4'
   s.add_development_dependency 'database_cleaner'

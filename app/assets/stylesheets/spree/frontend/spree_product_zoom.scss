@@ -5,6 +5,15 @@ the installer will append this file to the app vendored assets here: 'vendor/ass
 
 /*
  *= require fancybox
+ *= require drift-basic
 */
 
 #product-images #main-image img.click-to-zoom { min-height: 0px; height: 12px; }
+
+.product-hover-zoom {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 400px;
+}
