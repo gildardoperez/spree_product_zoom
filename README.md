@@ -30,7 +30,7 @@ bundle exec rails g spree_product_zoom:install
 
 in order to copy over the required css and js files.
 
-Once installation is complete your product images can be zoomed by clicking on the "Zoom In" button beneath an image.
+Once installation is complete your product images can be zoomed by clicking on the "Zoom In" button beneath an image, **and hovering over the product image opens a quick preview.**
 
 Configuration
 =========
